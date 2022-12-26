@@ -1,0 +1,170 @@
+###
+GET http://localhost:4000/api/product
+###
+GET http://localhost:4000/api/product/639ad71d88a8f17952016cca
+
+###
+GET http://localhost:4000/api/listrelated/638860d6de4b992d7039c13e
+
+###
+
+// category api
+GET http://localhost:4000/api/category
+
+###
+GET http://localhost:4000/api/category/63762d375d46dc77ca1e1c6a
+
+###
+###
+POST http://localhost:4000/api/category
+Content-Type: application/json
+
+{
+"category_name":"Bagsss"
+}
+
+
+###
+PUT http://localhost:4000/api/category/63762d375d46dc77ca1e1c6a
+Content-Type: application/json
+
+{
+"category_name":"Bags"
+}
+
+###
+DELETE http://localhost:4000/api/category/63762d375d46dc77ca1e1c6a
+
+
+###
+POST http://localhost:4000/api/category
+Content-Type: application/json
+
+{
+"category_name":"Shoes"
+}
+
+
+
+
+###
+
+// user register api
+POST http://localhost:4000/api/user
+Content-Type: application/json
+
+{
+        "name":"surace",
+        "email":"srace1123222@gmail.com",
+        "username":"ram112222",
+        "password":"Ram1233@" 
+}
+
+###
+
+// email verification --- receive in mailtrap inbox
+POST    http://localhost:4000/api/confirmation/81978931ee89c408fea58548719600c7
+
+
+###
+POST  http://localhost:4000/api/resendverification
+Content-Type: application/json
+
+{
+    "email": "surace112@gmail.com"    
+}
+
+###
+//signin
+POST http://localhost:4000/api/signin
+Content-Type: application/json
+
+{
+    "email": "surace112@gmail.com",
+    "password":"123"   
+}
+
+
+###
+// reset password
+POST   http://localhost:4000/api/forgetPassword
+Content-Type: application/json
+
+{
+    "email": "surace112@gmail.com"  
+}
+
+###
+PUT http://localhost:4000/api/resetpassword/fb803cf6b429d7e5dbb511fee571f33c
+Content-Type: application/json
+
+{
+    "password":"123"
+}
+
+###
+//signout
+
+POST http://localhost:4000/api/signout
+
+###
+//get user list
+
+GET http://localhost:4000/api/userList
+
+###
+// get single user
+GET http://localhost:4000/api/userList/63834732b75916143f4c8c2a
+
+
+###
+// post order
+POST  http://localhost:4000/api/postorder
+Content-Type: application/json
+
+ {
+  "orderItems":[
+    {
+      "quantity":3,
+      "product":"637c8c2439813352f5b34063"
+    },
+    {
+      "quantity":2,
+      "product":"637c8c3739813352f5b3406a"
+    }
+    ],
+    "shippingAddress1":"Jamal",
+    "shippingAddress2":"baneswor",
+    "city":"ktm",
+    "country":"Nepal",
+    "zip":44600,
+    "phone":9843567890,
+    "user":"63834732b75916143f4c8c2a"
+}
+
+###
+//get order list
+GET http://localhost:4000/api/orderList
+
+###
+//get order details
+GET http://localhost:4000/api/orderDetails/638711bc5cb90a30e123dfc6
+
+###
+// update status
+PUT http://localhost:4000/api/updateStatus/638711bc5cb90a30e123dfc6
+Content-Type: application/json
+
+{
+  "status": "shipped"
+}
+
+###
+//get user order
+GET http://localhost:4000/api/userOrder/63834732b75916143f4c8c2a
+
+
+###
+//delete order
+DELETE http://localhost:4000/api/deleteOrder/638712ccf78e3f9d5ced2eee
+

@@ -1,0 +1,41 @@
+[
+  {
+    "_id": "637b41fcc153e822a735f16e",
+    "product_name": "Dell",
+    "product_price": 899,
+    "countinStock": "10",
+    "product_description": "this is dell product",
+    "product_image": "public\\uploads\\dell_1669022204897.jpg",
+    "category": null,
+    "product_rating": 3,
+    "createdAt": "2022-11-21T09:16:44.901Z",
+    "updatedAt": "2022-11-21T09:16:44.901Z",
+    "__v": 0
+  },
+  {
+    "_id": "637c8c2439813352f5b34063",
+    "product_name": "Dell",
+    "product_price": 899,
+    "countinStock": "10",
+    "product_description": "this ia dell product",
+    "product_image": "public\\uploads\\dell_1669106724721.jpg",
+    "category": null,
+    "product_rating": 3,
+    "createdAt": "2022-11-22T08:45:24.740Z",
+    "updatedAt": "2022-11-22T08:45:24.740Z",
+    "__v": 0
+  },
+  {
+    "_id": "637c8c3739813352f5b3406a",
+    "product_name": "iphoneX",
+    "product_price": 899,
+    "countinStock": "10",
+    "product_description": "this is apple product",
+    "product_image": "public\\uploads\\dell_1669106743295.jpg",
+    "category": null,
+    "product_rating": 3,
+    "createdAt": "2022-11-22T08:45:43.299Z",
+    "updatedAt": "2022-11-22T08:45:43.299Z",
+    "__v": 0
+  }
+]
